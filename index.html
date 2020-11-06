@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+
+</head>
+
+<body>
+    <div class="life-score d-flex justify-content-between pt-1 px-5">
+        <h3 class="mb-0 pb-0">Score <span id="score">0</span> </h3>
+        <h3 class="mb-0 pb-0">Life <span id="life">10</span></h3>
+    </div>
+    <audio  id="scoreAudio">
+        <source src="audio/score.mp3" type="audio/ogg">
+        
+
+        
+    </audio>
+    <audio id="playAudio">
+        <source src="audio/play.mp3" type="audio/mpeg">
+            
+    </audio>
+    <audio id="notScoreAudio">
+        <source src="audio/notScore.mp3" type="audio/mpeg">
+    </audio>
+    <audio  id="gameOverAudio">
+        <source src="audio/gameOver.mp3" type="audio/mpeg">
+
+    </audio>
+    <section >
+        <div class="container">
+            <div class="row happy-hen ">
+                <div class="col-md-4 text-center"><img class="pulse w-40" src="images/Happy_hen.svg"></div>
+                <div class="col-md-4 text-center"><img class="pulse w-40" src="images/Happy_hen.svg"></div>
+                <div class="col-md-4 text-center"><img class="w-40 pulse" src="images/Happy_hen.svg"></div>
+            </div>
+            <!-- happy eggs -->
+            <div class="row" id="happyEggs">
+                <div id="egg1" class=" col-md-4 happy-egg w-25 text-center">
+                    <img id="egg1-img" class="myEgg w-10 position-absolute" src="images/Happy_Egg.svg">
+                </div>
+                <div id="egg2" class="col-md-4 happy-egg w-25 text-center">
+                    <img id="egg2-img" class="myEgg w-10 position-absolute" src="images/Happy_Egg.svg">
+                </div>
+                <div id="egg3" class="col-md-4 happy-egg w-25 text-center">
+                    <img id="egg3-img" class="myEgg position-absolute w-10" src="images/Happy_Egg.svg">
+                </div>
+            </div>    
+            
+<!-- broken eggs -->
+            <div class="row">
+                <div id="brokenEgg1" class=" col-md-4 broken-eggs w-25 text-center">
+                    <img class="w-35" src="images/Broken_Egg.svg">
+                </div>
+                <div id="brokenEgg2" class="  col-md-4 broken-eggs w-25 text-center">
+                    <img class="w-35" src="images/Broken_Egg.svg">
+                </div>
+                <div id="brokenEgg3" class="col-md-4  broken-eggs w-25 text-center">
+                    <img class="w-35" src="images/Broken_Egg.svg">
+                </div>
+            </div>    
+                
+            
+            <div class="row game-intro" >
+                <div id="gameIntro" class="col-md-6 w-50 text-center m-auto position-fixed ">
+                    <div id="start">
+                        <h1 class="text-white font-weight-bold">HAPPY EGGS</h1>
+                        <button id="play" class="btn btn-pink rounded-pill text-center text-white px-5 ">Play</button>
+                    </div>
+                </div>
+                <div id="gameOver" class="col-md-6 w-50 text-center m-auto position-fixed ">
+                    <div class=" text-center">
+                        <h1 class="text-white font-weight-bold">HAPPY EGGS</h1>
+                        <span class="mx-auto text-center " id="scoreFinal" >0</span>
+                        <button class="btn btn-pink rounded-pill text-center text-white " id="playAgain">Play Again</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <div id="basketDiv" class=" w-25 position-relative ">
+        <img id="basket" class="w-25 position-absolute" src="images/Basket.svg">
+        <span id="basketScore" class=" position-absolute"></span>
+    </div>
+
+    <script src="js/jquery-3.5.0.min.js"></script>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
